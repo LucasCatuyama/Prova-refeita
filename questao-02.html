@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-questao02.css" />
   </head>
   <body>
     <header>
@@ -20,20 +21,89 @@
       <div><a href="./questao-03.html">Questão 03</a></div>
     </header>
     <main>
-        <div class="questaoTexto">
-            <h1>QUESTÃO 02 (VALOR: 02 PONTOS)
-            </h1>
-            <p>Você está trabalhando em um projeto emocionante: desenvolver uma aplicação web com uma funcionalidade de calculadora para calcular o custo total de combustível em uma viagem. Esta aplicação será uma ferramenta útil para calcular rapidamente os custos de uma carona entre amigos ou colegas. Sua tarefa é implementar as seguintes funcionalidades:</p>
-            <ol>
-                <li>Calcular a quantidade de combustível necessária para a viagem, dividindo o total de quilômetros pelo consumo médio do veículo. Por exemplo, se a viagem for de 100 km e o veículo consome em média 10 km/L, serão necessários 10 litros de combustível.</li>
-                <li>Determinar o custo total da viagem multiplicando a quantidade de combustível pelo preço do litro de combustível. Por exemplo, se forem necessários 10 litros de combustível e o preço do litro for R$5,00, o custo total será de R$50,00.</li>
-            </ol>
-            <p>Além disso, para facilitar a divisão dos custos entre participantes, o sistema precisa oferecer a opção de dividir o total pelo número de pessoas que irão contribuir com o pagamento. Com essas funcionalidades implementadas, os usuários poderão calcular facilmente o custo de suas viagens e dividir os gastos de forma justa e eficiente.</p>
-            <p>Com base no exemplo de código HTML apresentado CRIE o código CSS necessário para estilizar a calculadora para que ela fique acessível e apresentável ao usuário. E, de forma complementar, IMPLEMENTE o código JavaScript necessário para as funcionalidades de custo total e divisão da carona.</p>
-        </div>
+      <div class="questaoTexto">
+        <h1>QUESTÃO 02 (VALOR: 2,0 PONTOS)</h1>
+        <p>
+          Você está trabalhando em um projeto emocionante: desenvolver uma
+          aplicação web com uma funcionalidade de calculadora para calcular o
+          custo total de combustível em uma viagem. Esta aplicação será uma
+          ferramenta útil para calcular rapidamente os custos de uma carona
+          entre amigos ou colegas. Sua tarefa é implementar as seguintes
+          funcionalidades:
+        </p>
+        <ol>
+          <li>
+            Calcular a quantidade de combustível necessária para a viagem,
+            dividindo o total de quilômetros pelo consumo médio do veículo. Por
+            exemplo, se a viagem for de 100 km e o veículo consome em média 10
+            km/L, serão necessários 10 litros de combustível.
+          </li>
+          <li>
+            Determinar o custo total da viagem multiplicando a quantidade de
+            combustível pelo preço do litro de combustível. Por exemplo, se
+            forem necessários 10 litros de combustível e o preço do litro for
+            R$5,00, o custo total será de R$50,00.
+          </li>
+        </ol>
+        <p>
+          Além disso, para facilitar a divisão dos custos entre participantes, o
+          sistema precisa oferecer a opção de dividir o total pelo número de
+          pessoas que irão contribuir com o pagamento. Com essas funcionalidades
+          implementadas, os usuários poderão calcular facilmente o custo de suas
+          viagens e dividir os gastos de forma justa e eficiente.
+        </p>
+        <p>
+          Com base no exemplo de código HTML apresentado CRIE o código CSS
+          necessário para estilizar a calculadora para que ela fique acessível e
+          apresentável ao usuário. E, de forma complementar, IMPLEMENTE o código
+          JavaScript necessário para as funcionalidades de custo total e divisão
+          da carona.
+        </p>
+      </div>
+      <section class="formulario">
+        <h2>RESPOSTA</h2>
+        <form action="">
+          <div class="formulario__lacuna">
+            <label for="">Distância da viagem: </label>
+            <input type="text" name="" id="distancia" />
+          </div>
+          <div class="formulario__lacuna">
+            <label for="">Consumo médio do veículo: </label>
+            <input type="text" name="" id="consumoMedio" />
+          </div>
+          <div class="formulario__lacuna">
+            <p>
+              Combustível necessário: <span id="resultadoCombustivel">0</span>
+            </p>
+          </div>
+          <div class="formulario__lacuna">
+            <label for="">Preço do combustível: </label>
+            <input type="text" name="" id="precoLitro" />
+          </div>
+          <div class="formulario__lacuna">
+            <p>Custo total da viagem: <span id="custoViagem">0</span></p>
+          </div>
+          <div class="formulario__lacuna">
+            <label for="">Quantidade de participantes</label>
+            <input type="text" name="" id="participantes" />
+          </div>
+          <div class="formulario__lacuna">
+            <p>
+              Custo para cada participante:
+              <span id="custoParticipante">0</span>
+            </p>
+          </div>
+          <div class="formulario__lacuna formulario__button">
+            <button id="calcular" class="calcular" type="submit">
+              Calcular
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer>
-        <p>Desenvolvido por Lucas Catuyama</p>
+      <p>Desenvolvido por Lucas Catuyama</p>
     </footer>
+    <script src="questao-02.js"></script>
   </body>
 </html>
