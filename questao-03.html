@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-questao03.css">
   </head>
   <body>
     <header>
@@ -28,12 +29,69 @@
 
         </div>
         <div class="resposta">
-            <h1>RESPOSTA</h1>
-            <p>asdkjflk;asdjflkjaslklç~sdfkg~çdsfkçg~ksdçfkgç~lsdfkglç~ksdç~lfkgdjfl;as</p>
+            <section class="formulario">
+              <h2>RESPOSTA</h2>
+
+              <form action="">
+
+                <div class="formulario__lacuna">
+                  <label for="Name">Nome: </label>
+                  <input type="text" name="name" id="name" required/>
+                </div>
+
+                <div class="formulario__lacuna">
+                  <label for="phone">Contato (telefone): </label>
+                  <input type="text" name="phone" id="phone" required/>
+                </div>
+
+                <div class="formulario__lacuna">
+                  <label for="people">Quantidade de pessoas: </label>
+                  <input type="text" name="people" id="people" required/>
+                </div>
+
+                <div class="formulario__lacuna">
+                  <label for="hour">Horário de preferência: </label>
+                  <select name="hour" id="hour" form="#" required>
+                    <optgroup>
+                      <option value="" disabled selected>Selecione uma opção</option>
+                      <option value="">19h</option>
+                      <option value="">20h</option>
+                      <option value="">21h</option>
+                      <option value="">22h</option>
+                      <option value="">23h</option>
+                      <option value="">24h</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <div class="formulario__lacuna">
+                  <label for="pizza">Sabor: </label>
+                  <select name="pizza" id="pizza" form="#" required>
+                    <optgroup>
+                      <option value="" disabled selected>Selecione uma opção</option>
+                      <option value="">Calabresa</option>
+                      <option value="">Portuguesa</option>
+                      <option value="">Quatro queijos</option>
+                      <option value="">Marguerita</option>
+                      <option value="">Frango com Catupiri</option>
+                      <option value="">Napolitana</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <div class="formulario__lacuna formulario__button">
+                  <button id="submenter" class="submeter" type="submit">
+                    Submeter
+                  </button>
+                </div>
+                <p>Não aparecerá o alert() criado com JS pois todos os input estão com "required"</p>
+              </form>
+            </section>
         </div>
     </main>
     <footer>
         <p>Desenvolvido por Lucas Catuyama</p>
     </footer>
+    <script src="questao-03.js"></script>
   </body>
 </html>

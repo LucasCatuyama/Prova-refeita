@@ -1,0 +1,32 @@
+:root {
+    --font-family: "Inter", sans-serif;
+    --main-orange: #fea500;
+    --secundary-orange: #df7f36;
+    --white: #f0f0f0;
+    --white-087: rgba(255, 255, 255, 0.87);
+    --white-033: rgba(255, 255, 255, 0.33);
+    --black-1: #121212;
+    --black-2: #1d1d1d;
+    --black-3: #242424;
+    --black-4: #2c2c2c;
+}
+
+.resposta {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    text-align: justify;
+    background-color: var(--black-2);
+    line-height: 20px;
+    border: 1px solid var(--main-orange);
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding: 50px 80px;
+}
+
+footer {
+    bottom: 0;
+}
